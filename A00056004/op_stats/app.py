@@ -1,8 +1,14 @@
 from flask import Flask
 import json
+
+import sys
+
+sys.path.append('/home/flaskdev/so-exam3/A00056004/')
+
 from op_stats.stats import Stats
 
 app = Flask(__name__)
+
 
 @app.route('/getStats/cpu')
 def get_cpuinfo():

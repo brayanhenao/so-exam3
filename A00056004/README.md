@@ -38,6 +38,9 @@ Para exponer los servicios mediante Flask, se modifica el archivo op_stats/app.p
 ```python
 from flask import Flask
 import json
+import sys
+sys.path.append('/home/flaskdev/so-exam3/A00056004/')
+
 from op_stats.stats import Stats
 
 app = Flask(__name__)
