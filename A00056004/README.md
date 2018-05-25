@@ -164,6 +164,12 @@ commands =
   pytest
 ```
 
+Para ejecutar este archivo se utiliza el comando en donde se encuentra el archivo tox.ini:
+```console
+tox -e pytest
+```
+![](images/tox.png)
+
 #### .travis.yml
 Este archivo se encarga de indicarle a la herramienta de integración contínua (TravisCI) los parámetros de ejecución
 de las pruebas, si quiere que se ejecuten como administrador, el lenguaje de programación, si se desea recibir 
@@ -179,3 +185,13 @@ python:
 install: pip install tox-travis
 script: tox -e pytest
 ```
+
+Este archivo se ejecuta automáticamente al realizar algún cambio en el repositorio, la herramienta empezará a hacer 
+build de acuerdo a los parámetros de este archivo y se podrán ver los resultados tanto en github como en la página de
+la herramienta (más detallados).
+
+##### Github
+![](images/travis_result1.png)
+
+##### travis-ci.com
+![](images/travis_result2.png)
