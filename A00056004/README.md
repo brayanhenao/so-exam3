@@ -191,7 +191,7 @@ build de acuerdo a los parámetros de este archivo y se podrán ver los resultad
 la herramienta (más detallados).
 
 ##### Github
-![](images/travis_result1.png)
+![](images/travis_result.png)
 
 ##### travis-ci.com
 ![](images/travis_result2.png)
